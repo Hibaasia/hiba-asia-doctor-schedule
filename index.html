@@ -3308,33 +3308,23 @@ footer{text-align:center;color:#59768b;font-size:11px;padding:20px}
   padding:20px 140px !important;
   text-align:center !important;
 }
-.clinic-header img{
-  position:absolute !important;
-  left:24px !important;
-  top:50% !important;
-  transform:translateY(-50%) !important;
-  width:100px !important;
-  height:100px !important;
-  object-fit:contain !important;
-}
 .clinic-header .clinic-brand-block{
   width:100% !important;
   text-align:center !important;
   align-items:center !important;
 }
-.clinic-header img.clinic-logo{
-  position:static !important;
-  transform:none !important;
-  display:block;
-  width:90px !important;
-  height:90px !important;
-  object-fit:contain;
-  margin:12px auto 0;
-  filter:none !important;
+.clinic-logo-bottom{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:12px 0;
 }
+.clinic-logo-bottom img{
+  width:100px;
+  height:100px;
+  object-fit:contain;
 }
 </style>
-}
 </head>
 <body class="">
 <main class="wrap">
@@ -3351,13 +3341,13 @@ footer{text-align:center;color:#59768b;font-size:11px;padding:20px}
     </div>
   </div>
 
+</header>
+<div class="clinic-logo-bottom">
   <img
     src="https://hibaasia.care/assets/WhatsApp_Image_2024-05-14_at_23.42.18-removebg-preview-BCnN3KkH.png"
     alt="Hiba Asia Logo"
-    class="clinic-logo"
   >
-</header>
-
+</div>
 <div class="top-bar">
   <input type="text" id="searchInput" class="search-box" placeholder="🔍 Search doctor, country, dept, OPD..." oninput="render()">
   <button class="btn btn-admin" id="toggleEditBtn" onclick="handleEditButtonClick()">🔑 Admin Login</button>
