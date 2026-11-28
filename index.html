@@ -3298,7 +3298,8 @@ footer{text-align:center;color:#59768b;font-size:11px;padding:20px}
   #monthModalContent .cal-day{min-height:72px}
   #monthModalContent .cal-day span{font-size:8px!important}
 }
-      .clinic-header{
+
+.clinic-header{
   position:relative !important;
   display:flex !important;
   flex-direction:column !important;
@@ -3308,21 +3309,44 @@ footer{text-align:center;color:#59768b;font-size:11px;padding:20px}
   padding:20px 140px !important;
   text-align:center !important;
 }
+
 .clinic-header .clinic-brand-block{
   width:100% !important;
   text-align:center !important;
   align-items:center !important;
 }
+
 .clinic-logo-bottom{
   display:flex;
   justify-content:center;
   align-items:center;
   padding:12px 0;
 }
+
 .clinic-logo-bottom img{
-  width:100px;
-  height:100px;
+  width:200px !important;
+  height:200px !important;
   object-fit:contain;
+}
+
+@media(max-width:600px){
+  .clinic-header{
+    padding:15px 8px !important;
+    min-height:auto !important;
+  }
+
+  .clinic-header .brand,
+  .clinic-header .brand-ar{
+    white-space:nowrap !important;
+    word-break:normal !important;
+    overflow-wrap:normal !important;
+    font-size:18px !important;
+  }
+
+  .clinic-header .clinic-brand-block{
+    width:100% !important;
+    min-width:0 !important;
+  }
 }
 </style>
 </head>
