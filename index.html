@@ -3019,12 +3019,53 @@
 *{box-sizing:border-box}
 body{margin:0;background:linear-gradient(135deg,#e4f3ed 0%,#e8f1fa 48%,#d8eee5 100%);font-family:Arial,"Noto Sans Arabic",sans-serif;color:var(--ink)}
 .wrap{max-width:1900px;margin:auto;padding:18px}
-header{background:linear-gradient(110deg,#078b58,#087b9e 55%,#155b91);color:#fff;border-radius:18px;padding:20px 24px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 8px 25px #123d5b24;flex-direction:column;text-align:center}
-.clinic-brand-block{width:100%;display:flex;flex-direction:column;align-items:center;gap:5px}
-.brand{font-size:clamp(19px,2.2vw,31px);font-weight:800;letter-spacing:.6px}
-.brand-ar{direction:rtl;font-size:clamp(18px,2vw,24px);font-weight:800;color:#fff;margin:0}
-.clinic-location{font-size:13px;letter-spacing:1.7px;font-weight:700;color:#d7f2ec}
-.header-right{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
+header{
+  background:linear-gradient(110deg,#078b58,#087b9e 55%,#155b91);
+  color:#fff;
+  border-radius:18px;
+  padding:20px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  box-shadow:0 8px 25px #123d5b24;
+  flex-direction:column;
+  text-align:center;
+  position:relative;
+  min-height:130px;
+}
+.clinic-brand-block{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:5px;
+}
+.brand{
+  font-size:clamp(19px,2.2vw,31px);
+  font-weight:800;
+  letter-spacing:.6px;
+}
+.brand-ar{
+  direction:rtl;
+  font-size:clamp(18px,2vw,24px);
+  font-weight:800;
+  color:#fff;
+  margin:0;
+}
+.clinic-location{
+  font-size:13px;
+  letter-spacing:1.7px;
+  font-weight:700;
+  color:#d7f2ec;
+}
+.header-right{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
 .clock{text-align:center;white-space:nowrap}
 .clock strong{font-size:clamp(25px,3vw,38px);font-variant-numeric:tabular-nums;display:block;margin-top:4px}
 .clock span{font-size:13px;color:#e5f3f8;display:block;margin-top:3px}
@@ -3257,14 +3298,43 @@ footer{text-align:center;color:#59768b;font-size:11px;padding:20px}
   #monthModalContent .cal-day{min-height:72px}
   #monthModalContent .cal-day span{font-size:8px!important}
 }
+      .clinic-header{
+  position:relative !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-height:150px !important;
+  padding:20px 140px !important;
+  text-align:center !important;
+}
+.clinic-header img{
+  position:absolute !important;
+  left:24px !important;
+  top:50% !important;
+  transform:translateY(-50%) !important;
+  width:100px !important;
+  height:100px !important;
+  object-fit:contain !important;
+}
+.clinic-header .clinic-brand-block{
+  width:100% !important;
+  text-align:center !important;
+  align-items:center !important;
+}
 </style>
 </head>
 <body class="">
 <main class="wrap">
 <header class="clinic-header">
+  <img
+    src="https://hibaasia.care/assets/WhatsApp_Image_2024-05-14_at_23.42.18-removebg-preview-BCnN3KkH.png"
+    alt="Hiba Asia Logo"
+    style="width:100px;height:100px;object-fit:contain;position:absolute;left:24px;"
+  >
   <div class="clinic-brand-block">
-    <div class="brand-ar">مجموعة هبة آسيا للرعاية الصحية</div>
-    <div class="brand">HIBA ASIA HEALTHCARE GROUP</div>
+    <div class="brand-ar">مجمع هبة آسيا الطبي</div>
+    <div class="brand">HIBA ASIA MEDICAL CENTER</div>
     <div class="clinic-location">WAZEERIYAH · JEDDAH</div>
   </div>
   <div class="header-right">
